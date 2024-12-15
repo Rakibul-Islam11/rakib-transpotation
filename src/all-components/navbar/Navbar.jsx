@@ -2,6 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import navbrandIGM from '../../assets/images/navbrand.png'
 import { Link, useLocation } from 'react-router-dom';
+
 const navigation = [
   { name: 'HOME', to: '/', current: false },//deafult page
   { name: 'ABOUT', to: '/about', current: false },
@@ -16,7 +17,8 @@ function classNames(...classes) {
 export default function Navbar() {
   const location = useLocation()//trac current route location
   return (
-    <Disclosure as="nav" className="bg-gray-800 w-[90%] md:w-3/4 mx-auto rounded-tl-lg rounded-tr-lg absolute top-4 left-1/2 transform -translate-x-1/2">
+    
+    <Disclosure as="nav" className="bg-gray-800 w-[90%] md:w-3/4 mx-auto">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

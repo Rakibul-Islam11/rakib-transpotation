@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom'
 import Navbar from './all-components/navbar/Navbar'
 import './App.css'
 import mainBgimage from './assets/images/bgMain.png'
+import TopMiniNav from './all-components/top-mini-nav/TopMiniNav';
 function App() {
     const appStyle = {
     backgroundImage: `url(${mainBgimage})`,
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <div style={appStyle}>
+        <TopMiniNav></TopMiniNav>
         <Navbar></Navbar>
         <Outlet></Outlet>
       </div>
