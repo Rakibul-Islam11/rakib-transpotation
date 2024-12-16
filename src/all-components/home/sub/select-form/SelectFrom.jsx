@@ -73,9 +73,12 @@ const SelectFrom = () => {
                 <div className="slct_form p-7 flex flex-col gap-3">
                     {/* Leaving From */}
                     <div>
-                        <label htmlFor="leaveFRM" className="text-sm mb-2 text-white font-bold">
+                        <label htmlFor="leaveFRM" className="text-sm mb-2 text-white font-bold ">
+                            
                             LEAVING FROM
-                        </label><br />
+                        </label>
+                        {errs.slctLeaving && <p className="text-red-500 ml-3 inline">Please select a city</p>}
+                        <br />
                         <select
                             id="leaveFRM"
                             //এখানে daynamically selct box এর color দেওয়া হয়েছে
@@ -92,14 +95,16 @@ const SelectFrom = () => {
                             ))}
                         </select>
                         {/* Display error if slctLeav is true */}
-                        {errs.slctLeaving && <p className="text-red-500">Please select a city</p>}
+                        
                     </div>
 
                     {/* Going To */}
                     <div>
                         <label htmlFor="depFRM" className="text-sm mb-2 text-white font-bold">
                             GOING TO
-                        </label><br />
+                        </label>
+                        {errs.slctDeparting && <p className="text-red-500 ml-3 inline">Please select a city</p>}
+                        <br />
                         <select
                             id="depFRM"
                             className={`w-full py-1.5 bg-white px-2 rounded-md focus:outline-none 
@@ -113,7 +118,7 @@ const SelectFrom = () => {
                             ))}
                         </select>
                         {/* Display error if slctLeav is true */}
-                        {errs.slctDeparting && <p className="text-red-500">Please select a city</p>}
+                        
                     </div>
 
                     {/* date pick */}
@@ -121,6 +126,7 @@ const SelectFrom = () => {
                         <label htmlFor="datePicker" className="text-sm mb-2 text-white font-bold">
                             DEPARTING DATE
                         </label>
+                        {errs.date && <p className="text-red-500 ml-3 inline">Please select date</p>}
                         <Flatpickr
                             id="datePicker"
                             options={{
@@ -130,10 +136,11 @@ const SelectFrom = () => {
                             }}
                              value={date || undefined} // Keep it undefined when no date is selected
                             onChange={dateHandler}
-                            className="block w-full py-1 px-2 bg-white rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black"
+                            className={`w-full py-1.5 bg-white px-2 rounded-md focus:outline-none 
+                                        ${errs.date ? "border-red-500 ring-1 ring-red-500" : "border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"} text-black`}
                             placeholder="Choose the date"
                         />
-                        {errs.date && <p className="text-red-500">Please select date</p>}
+                        
                     </div>
 
                     {/* Submit Button */}

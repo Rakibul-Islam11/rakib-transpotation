@@ -5,7 +5,7 @@ import SelectFrom from './sub/select-form/SelectFrom';
 const Home = () => {
     return (
         <div>
-            <div className="w-[90%] md:w-3/4 mx-auto video-container">
+            <div className="w-[100%] md:w-3/4 mx-auto video-container">
                 <video 
                     src={videoImport} 
                     autoPlay 

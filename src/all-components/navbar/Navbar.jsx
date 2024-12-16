@@ -18,7 +18,7 @@ export default function Navbar() {
   const location = useLocation()//trac current route location
   return (
     
-    <Disclosure as="nav" className="bg-gray-800 w-[90%] md:w-3/4 mx-auto">
+    <Disclosure as="nav" className="bg-gray-800 w-[100%] md:w-3/4 mx-auto">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
