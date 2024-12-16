@@ -82,7 +82,7 @@ const SelectFrom = () => {
     };
 
     return (
-        <div className='w-3/4 md:w-2/5 absolute bottom-[10%] left-[13%] md:left-[30%]'>
+        <div className='w-4/5 md:w-2/5 absolute bottom-[10%] left-[10%] md:left-[30%]'>
             <form onSubmit={formHandler}>
                 <div className="slct_form p-7 flex flex-col gap-3">
                     {/* Leaving From */}
@@ -91,7 +91,7 @@ const SelectFrom = () => {
                             
                             LEAVING FROM
                         </label>
-                        {errs.slctLeaving && <p className="text-red-500 ml-3 inline">Please select a city</p>}
+                        {errs.slctLeaving && <p className="text-red-500 ml-3 inline text-sm md:text-md">Please select a city</p>}
                         <br />
                         <select
                             id="leaveFRM"
@@ -117,7 +117,7 @@ const SelectFrom = () => {
                         <label htmlFor="depFRM" className="text-sm mb-2 text-white font-bold">
                             GOING TO
                         </label>
-                        {errs.slctDeparting && <p className="text-red-500 ml-3 inline">Please select a city</p>}
+                        {errs.slctDeparting && <p className="text-red-500 ml-3 inline text-sm md:text-md">Please select a city</p>}
                         <br />
                         <select
                             id="depFRM"
@@ -140,7 +140,7 @@ const SelectFrom = () => {
                         <label htmlFor="datePicker" className="text-sm mb-2 text-white font-bold">
                             DEPARTING DATE
                         </label>
-                        {errs.datee && <p className="text-red-500 ml-3 inline">Please select date</p>}
+                        {errs.datee && <p className="text-red-500 ml-3 inline text-sm md:text-md">Please select date</p>}
                         <Flatpickr
                             id="datePicker"
                             options={{
