@@ -56,7 +56,7 @@ const SelectFrom = () => {
     // date handler
     const dateHandler = (selectedDates) => {
         setDate(selectedDates.length > 0 ? selectedDates[0] : null);
-        setErrs(prev => ({ ...prev, date: selectedDates.length === 0 }));
+        setErrs(prev => ({ ...prev, datee: selectedDates.length === 0 }));
     };
 
     // form handler
@@ -148,7 +148,7 @@ const SelectFrom = () => {
                                 minDate: "today", // Min date: today
                                 maxDate: new Date().fp_incr(10), // Max date: 10 days from today
                             }}
-                             value={date || undefined} // Keep it undefined when no date is selected
+                            value={date || undefined} // Keep it undefined when no date is selected
                             onChange={dateHandler}
                             className={`w-full py-1.5 bg-white px-2 rounded-md focus:outline-none 
                                         ${errs.datee ? "border-red-500 ring-1 ring-red-500" : "border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"} text-black`}
