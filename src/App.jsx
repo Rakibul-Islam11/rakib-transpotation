@@ -10,8 +10,7 @@ function App() {
     backgroundImage: `url(${mainBgimage})`,
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed', // ব্যাকগ্রাউন্ড ইমেজ ফিক্সড থাকবে
-    height: '100%',
-    width: '100vw',
+  
     
   };
 
