@@ -82,7 +82,7 @@ const SelectFrom = () => {
     };
 
     return (
-        <div className='w-4/5 md:w-2/5 absolute bottom-[10%] left-[10%] md:left-[30%]'>
+        <div className='w-4/6 md:w-2/5 '>
             <form onSubmit={formHandler}>
                 <div className="slct_form p-7 flex flex-col gap-3">
                     {/* Leaving From */}
@@ -122,7 +122,7 @@ const SelectFrom = () => {
                         <select
                             id="depFRM"
                             className={`w-full py-1.5 bg-white px-2 rounded-md focus:outline-none 
-                                        ${errs.slctDeparting ? "border-red-500 ring-1 ring-red-500" : "border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"} text-black`}
+                                        ${errs.slctDeparting ? "border-red-500 ring-1 ring-red-500" : "border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"} text-black `}
                             onChange={handleSlecDeparting}
                         >
                             {DepurtingCities.map(city => (
