@@ -82,7 +82,7 @@ const SelectFrom = () => {
     };
 
     return (
-        <div className='w-4/6 md:w-2/5 '>
+        <div className='w-5/6 md:w-3/6 '>
             <form onSubmit={formHandler}>
                 <div className="slct_form p-7 flex flex-col gap-3">
                     {/* Leaving From */}

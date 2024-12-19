@@ -67,7 +67,7 @@ const Home = () => {
 
             {/* SelectFrom Component */}
             <div
-                className="absolute top-1/2 transform translate-x-[18%] -translate-y-[25%] md:translate-x-[30%] z-10 w-full"
+                className="absolute top-1/2 transform translate-x-[8%] -translate-y-[25%] md:translate-x-[26%] z-10 w-full"
             >
                 <SelectFrom />
             </div>
