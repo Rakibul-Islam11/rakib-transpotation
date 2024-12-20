@@ -10,7 +10,7 @@ const SeatPlaningMani = ({slctLeaving, slctDepuring, formattedDate, data}) => {
     
     return (
         <div>
-            <div className="flex flex-row justify-between items-center w-[100%] md:w-3/4 h-12 bg-gray-400 mx-auto px-2 mt-4 font-bold text-sm md:text-lg">
+            <div className="flex flex-row justify-between items-center w-[100%] md:w-3/4 h-12 bg-gray-400 mx-auto px-2 mt-4 font-bold text-[13px] md:text-lg">
                 <p>Operator & Coach Info</p>
                 <p>Departure Time</p>
                 <p>Fare (BDT)</p>
