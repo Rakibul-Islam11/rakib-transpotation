@@ -10,8 +10,8 @@ const SeatPlaningMani = ({slctLeaving, slctDepuring, formattedDate, data}) => {
     
     return (
         <div>
-            <div className="flex flex-row justify-between items-center w-[100%] md:w-3/4 h-12 bg-gray-400 mx-auto px-2 mt-4 font-bold text-[13px] md:text-lg">
-                <p>Operator & Coach Info</p>
+            <div className="flex flex-row justify-between items-center w-[100%] md:w-3/4 h-12 bg-gray-400 mx-auto px-2 mt-4 font-bold text-[15px] md:text-lg">
+                <p>Coach Info</p>
                 <p>Departure Time</p>
                 <p>Fare (BDT)</p>
             </div>
@@ -19,16 +19,16 @@ const SeatPlaningMani = ({slctLeaving, slctDepuring, formattedDate, data}) => {
                 getBuses.map((singleBuss, indxx)=> (
                     <div key={indxx} className="mt-1">
                         <div>
-                            <div className="w-[100%] md:w-3/4 flex flex-row justify-between items-center px-2 mx-auto  bg-white border border-black">
-                                <div>
-                                    <h1>RAKIB TRANS</h1>
-                                    <p>Bus ID: {singleBuss.busId}</p>
-                                    <p>Type: { singleBuss.class }</p>
+                            <div className="w-[100%] md:w-3/4 flex flex-row justify-between items-center px-2 mx-auto  bg-white border border-black ">
+                                <div >
+                                    <h1 className="text-lg font-bold text-[#656060]">RAKIB TRANS</h1>
+                                    <p className="text-sm md:text-md text-[#656060]">Bus ID: {singleBuss.busId}</p>
+                                    <p className="italic text-sm md:text-md text-[#656060]">Class: { singleBuss.class }</p>
                                 </div>
-                                <p>Time: {singleBuss.time}</p>
+                                <p className="text-sm md:text-md text-[#656060]">Time: {singleBuss.time}</p>
                                 <div className="flex flex-col justify-end items-end">
                                     <p>{singleBuss.fare}(tk)</p>
-                                    <button className="px-4 py-1 bg-blue-600">Select Seat</button>
+                                    <button className=" px-2 md:px-4 py-1 md:py-1 bg-blue-600 text-sm md:text-md text-white">Select Seat</button>
                                 </div>
                             </div>
                         </div>
