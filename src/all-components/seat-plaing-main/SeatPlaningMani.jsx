@@ -21,11 +21,14 @@ const SeatPlaningMani = ({slctLeaving, slctDepuring, formattedDate, data}) => {
                         <div>
                             <div className="w-[100%] md:w-3/4 flex flex-row justify-between items-center px-2 mx-auto  bg-white border border-black ">
                                 <div >
-                                    <h1 className="text-lg font-bold text-[#656060]">RAKIB TRANS</h1>
-                                    <p className="text-sm md:text-md text-[#656060]">Bus ID: {singleBuss.busId}</p>
-                                    <p className="italic text-sm md:text-md text-[#656060]">Class: { singleBuss.class }</p>
+                                    <h1 className="font-bold text-[#656060]">RAKIB TR <sup className="text-[10px]">TM</sup></h1>
+                                    <p className="text-[12px] md:text-md text-[#656060]">Bus ID: {singleBuss.busId}</p>
+                                    <p className="italic text-[12px] md:text-md text-[#656060]">Class: { singleBuss.class }</p>
                                 </div>
-                                <p className="text-sm md:text-md text-[#656060]">Time: {singleBuss.time}</p>
+                                <div className="flex flex-col md:flex-row md:gap-3 items-center">
+                                    <p>Time:</p>
+                                    <p className="text-sm md:text-md text-[#656060]">{singleBuss.time}</p>
+                                </div>
                                 <div className="flex flex-col justify-end items-end">
                                     <p>{singleBuss.fare}(tk)</p>
                                     <button className=" px-2 md:px-4 py-1 md:py-1 bg-blue-600 text-sm md:text-md text-white">Select Seat</button>
