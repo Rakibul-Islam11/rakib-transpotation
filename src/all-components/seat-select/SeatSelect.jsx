@@ -1,4 +1,5 @@
-import { useLocation } from "react-router-dom";
+import {  useLoaderData, useLocation } from "react-router-dom";
+import SeatPlaningMani from "../seat-plaing-main/SeatPlaningMani";
 
 const SeatSelect = () => {
     const location = useLocation()//navigate এ যে state এর মাদ্ধমে ডাটা পাঠানো হয়েছে তা রিসিভ করা হয়েছে।
@@ -10,10 +11,8 @@ const SeatSelect = () => {
         })} (${new Date(date).toLocaleDateString("en-US", {
             weekday: "long", // Full weekday name
         })})`;
-
-
-
-
+    //recieve api data
+    const data = useLoaderData()
     return (
         <div>
             <div className="w-[100%] md:w-3/4 mx-auto bg-green-400 px-4 py-1">
@@ -28,7 +27,7 @@ const SeatSelect = () => {
                 </div>
                 
             </div>
-            
+            <SeatPlaningMani slctLeaving={slctLeaving} slctDepuring={slctDepuring} formattedDate={formattedDate} data={data}></SeatPlaningMani>
         </div>
     );
 };

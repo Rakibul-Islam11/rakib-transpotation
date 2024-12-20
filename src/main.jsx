@@ -9,6 +9,9 @@ import About from './all-components/about/About.jsx'
 import Contact from './all-components/contact/Contact.jsx'
 import RouteError from './all-components/router-error/RouteError.jsx'
 
+
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -33,6 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'seatSelect',
+        loader: () => fetch('fareData.json'),
         element: <SeatSelect></SeatSelect>
       },
       {

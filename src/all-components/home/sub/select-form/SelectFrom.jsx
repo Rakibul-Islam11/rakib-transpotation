@@ -37,7 +37,6 @@ const SelectFrom = () => {
     const [date, setDate] = useState(null); // date state (5)
     const [errs, setErrs] = useState({ slctLeaving: false, slctDeparting: false, datee: false }); // change to object
     const navigate = useNavigate()//এটি usenagigate hook এইটার veriable নিচে use করা হয়েছে
-    console.log(date);
     
     //handle selct leaving
     const handleSlctLeaving = (e) => {
