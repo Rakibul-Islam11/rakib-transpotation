@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Marquee from "react-fast-marquee";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -20,6 +21,7 @@ import SelectFrom from './sub/select-form/SelectFrom';
 const Home = () => {
     return (
         <div className="relative w-full md:w-3/4 h-[80vh] mx-auto">
+            
             {/* Swiper Slider */}
             <Swiper
                 spaceBetween={30}
@@ -35,12 +37,14 @@ const Home = () => {
                 modules={[EffectFade, Navigation, Autoplay]} // Autoplay module যোগ করা হয়েছে
                 className="mySwiper"
             >
+                
                 <SwiperSlide>
                     <img 
                         src={grimgone}
                         alt="nature-1" 
                         className="w-full h-screen object-cover"
                     />
+                    
                 </SwiperSlide>
                 <SwiperSlide>
                     <img 
@@ -65,10 +69,12 @@ const Home = () => {
                 </SwiperSlide>
             </Swiper>
 
+
             {/* SelectFrom Component */}
             <div
                 className="absolute top-1/2 transform translate-x-[8%] -translate-y-[25%] md:translate-x-[26%] z-10 w-full"
             >
+                
                 <SelectFrom />
             </div>
 

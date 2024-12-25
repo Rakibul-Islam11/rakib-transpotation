@@ -23,6 +23,13 @@
                     "time": "06:00 PM",
                     "class": "Business",
                     "fare": 1600
+                },
+                {
+                    "index": 3,
+                    "busId": "BUS104",
+                    "time": "06:00 PM",
+                    "class": "Business",
+                    "fare": 1600
                 }
             ]
         },
