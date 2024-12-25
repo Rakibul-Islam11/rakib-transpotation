@@ -12,7 +12,7 @@ const TopMiniNav = () => {
 
                 <div><a href="https://www.facebook.com/rakib.al.muqtadir.2024/">Facebook</a></div>
             </div>
-                <div className="block lg:hidden w-3/4 overflow-hidden mx-auto text-blue-300">
+                <div className="block lg:hidden w-full md:w-3/4 px-2 md:px-0 overflow-hidden mx-auto text-blue-300">
                     <Marquee pauseOnHover={true}>
                         I can be a React component, multiple React components, or just some text.
                     </Marquee>

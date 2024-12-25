@@ -47,11 +47,13 @@ const SeatPlaningMani = ({ slctLeaving, slctDepuring, formattedDate, data }) => 
 
     return (
         <div>
+            {/* buss time and info card  start*/}
             <div className="flex flex-row justify-between items-center w-[100%] md:w-3/4 h-12 bg-gray-400 mx-auto px-2 mt-4 font-bold text-[15px] md:text-lg">
                 <p>Coach Info</p>
                 <p>Departure Time</p>
                 <p>Fare (BDT)</p>
             </div>
+            {/* buss time and info card  end*/}
             {getBuses.map((singleBus, indxx) => (
                 <div key={indxx} className="mt-1">
                     <div>
@@ -85,7 +87,7 @@ const SeatPlaningMani = ({ slctLeaving, slctDepuring, formattedDate, data }) => 
                             </div>
                         </div>
                         {/* available buss card end*/}
-                        {/* Seat planning section */}
+                        {/* Seat planning section start*/}
                         {visibility[indxx] && (
                             <div className="w-[100%] md:w-3/4 mx-auto bg-white p-4">
                                 {/* Cross button */}
@@ -151,6 +153,7 @@ const SeatPlaningMani = ({ slctLeaving, slctDepuring, formattedDate, data }) => 
                                 </div>
                             </div>
                         )}
+                        {/* Seat planning section end*/}
                     </div>
                 </div>
             ))}
