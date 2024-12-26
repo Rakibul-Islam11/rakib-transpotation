@@ -1,6 +1,5 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Marquee from "react-fast-marquee";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -17,6 +16,7 @@ import { EffectFade, Navigation, Autoplay } from 'swiper/modules';
 // Import CSS (Make sure the path is correct)
 import './Home.css';
 import SelectFrom from './sub/select-form/SelectFrom';
+import AboutTranspotation from './sub/about-transpotation/AboutTranspotation';
 
 const Home = () => {
     return (
@@ -70,14 +70,15 @@ const Home = () => {
             </Swiper>
 
 
-            {/* SelectFrom Component */}
+            {/*rander SelectFrom Component */}
             <div
                 className="absolute top-1/2 transform translate-x-[8%] -translate-y-[25%] md:translate-x-[26%] z-10 w-full"
             >
                 
                 <SelectFrom />
             </div>
-
+            {/* rander abouttranspotaion componnet */}
+            <AboutTranspotation></AboutTranspotation>
         </div>
     );
 };
