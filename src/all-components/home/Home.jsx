@@ -26,6 +26,8 @@ import { EffectFade, Navigation, Autoplay } from 'swiper/modules';
 import './Home.css';
 import SelectFrom from './sub/select-form/SelectFrom';
 import AboutTranspotation from './sub/about-transpotation/AboutTranspotation';
+import FlipCard from './show-details-in-the-card/FlipCard';
+
 
 const Home = () => {
     return (
@@ -89,7 +91,7 @@ const Home = () => {
             {/* rander abouttranspotaion componnet */}
             <AboutTranspotation></AboutTranspotation>
             {/* brand marque start */}
-            <div className='bg-white pt-8'>
+            <div className='bg-white pt-8 px-4'>
                 <div>
                     <h1 className='text-slate-500 text-2xl text-center'>With Our Spuer Couches</h1>
                     <Marquee>
@@ -105,6 +107,8 @@ const Home = () => {
                     </Marquee>
                 </div>
             </div>
+            {/* rander ShowDetailsCard compo  */}
+            <FlipCard></FlipCard>
         </div>
     );
 };

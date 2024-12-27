@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import '../../../../all-components/global-css/globle.css';
 
 const AboutTranspotation = () => {
@@ -15,10 +15,12 @@ const AboutTranspotation = () => {
     return (
         <div className="bg-white shadow-2xl">
             <div>
-                <h1 className="text-center text-2xl text-slate-500 for_use_font_class pt-4">Welcome To RAKIB Couch</h1>
+                <h1 className="text-center text-2xl text-slate-500 for_use_font_class pt-4 font-bold">Welcome To RAKIB Couch</h1>
                 <div>
                     <p className="text-slate-600 for_use_font_class px-4 leading-relaxed pt-2 md:pt-0">
-                        {showFullText ? fullText : shortText}
+                        {/* এখানে showFullText যদি true হয় তাহলে fulltext দেখাবে নাহলে shorttext */}
+                        {showFullText ? fullText : shortText} 
+                        {/* এখানে showFullText deafult false করা আছে আর এটা যতখন !showFullText মানে false থাকবে তখনি আমি more বাটনটা দেখাবো */}
                         {!showFullText && (
                             <span
                                 onClick={handleToggle}
@@ -28,6 +30,7 @@ const AboutTranspotation = () => {
                             </span>
                         )}
                     </p>
+                    {/* আর যদি এটা showFullText true হয় তাহলে show less বাটন দেখাবে  */}
                     {showFullText && (
                         <span
                             onClick={handleToggle}

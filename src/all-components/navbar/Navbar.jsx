@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 const navigation = [
   { name: 'HOME', to: '/', current: false },//deafult page
   { name: 'ABOUT', to: '/about', current: false },
+  { name: 'SERVICE', to: '/service', current: false },
   { name: 'CONTACT', to: '/contact', current: false },
   { name: 'TICKET CANCEL', to: '#', current: false },
 ]
@@ -21,6 +22,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-gray-800 w-full shadow-2xl">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
+
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -30,6 +32,7 @@ export default function Navbar() {
               <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-[open]:block" />
             </DisclosureButton>
           </div>
+          
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
               <img
@@ -45,10 +48,11 @@ export default function Navbar() {
                     key={item.name}
                     to={item.to}
                     className={classNames(
-                      location.pathname === item.to//active route style
-                        ? 'bg-gray-900 text-white font-bold'
+                      location.pathname === item.to // active route style
+                        ? 'outline outline-1 outline-red-400 text-white font-bold'  // Active route style with red outline
                         : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                       'rounded-md px-3 py-2 text-sm font-medium'
+
                     )}
                   >
                     {item.name}
