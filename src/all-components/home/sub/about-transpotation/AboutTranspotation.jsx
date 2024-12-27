@@ -13,11 +13,11 @@ const AboutTranspotation = () => {
     const fullText = `${shortText} Onboard amenities include LED screens for entertainment, free Wi-Fi connectivity, and mobile charging ports at every seat. The buses are equipped with GPS tracking for enhanced safety and real-time updates. Clean and hygienic restrooms are provided for convenience. Professional and courteous staff ensure excellent customer service. Punctuality is a hallmark, minimizing delays and maximizing satisfaction. Luxury-class options feature additional comforts like plush seating and complementary snacks. Regular maintenance keeps the fleet in top-notch condition, emphasizing passenger safety. Affordable pricing makes Rakib Transportation accessible to a wide range of travelers. For premium travel solutions with reliability and comfort, Rakib Transportation is a top choice.`;
 
     return (
-        <div className="bg-white shadow-2xl">
+        <div className="bg-white shadow-2xl pt-4">
             <div>
-                <h1 className="text-center text-2xl text-slate-500 for_use_font_class pt-4 font-bold">Welcome To RAKIB Couch</h1>
+                <h1 className="text-center text-2xl text-slate-500 for_use_font_class pt-4 font-bold">WELCOME TO RAKIB Couch</h1>
                 <div>
-                    <p className="text-slate-600 for_use_font_class px-4 leading-relaxed pt-2 md:pt-0">
+                    <p className="text-slate-600 for_use_font_class px-4 leading-relaxed pt-2 md:pt-0 text-justify">
                         {/* এখানে showFullText যদি true হয় তাহলে fulltext দেখাবে নাহলে shorttext */}
                         {showFullText ? fullText : shortText} 
                         {/* এখানে showFullText deafult false করা আছে আর এটা যতখন !showFullText মানে false থাকবে তখনি আমি more বাটনটা দেখাবো */}

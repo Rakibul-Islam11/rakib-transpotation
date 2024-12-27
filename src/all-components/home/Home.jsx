@@ -31,7 +31,7 @@ import FlipCard from './show-details-in-the-card/FlipCard';
 
 const Home = () => {
     return (
-        <div className="relative w-full md:w-3/4 h-[80vh] mx-auto ">
+        <div className="relative w-[96%] md:w-3/4 h-[80vh] mx-auto ">
             
             {/* Swiper Slider */}
             <Swiper

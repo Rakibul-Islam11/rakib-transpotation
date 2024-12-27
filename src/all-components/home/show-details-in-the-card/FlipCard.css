@@ -4,11 +4,7 @@
   height: 240px;
   perspective: 1200px; /* Increase perspective for more depth */
 }
-@media only screen and (max-width:768px) {
-  .card-container{
-    width: 100% ;
-  }
-}
+
 /* Card content */
 .card-content {
   width: 100%;
@@ -76,4 +72,12 @@
 .card-back button:hover {
   transform: translateY(-5px); /* Hover lift effect */
   background: #ffc107; /* Slight color change */
+}
+
+
+@media only screen and (max-width:768px) {
+  .card-container {
+    width: 100%;
+  }
+
 }

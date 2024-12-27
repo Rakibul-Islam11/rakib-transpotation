@@ -3,7 +3,7 @@ import nvbrandimg from '../../assets/images/navbrand.png'
 
 const Service = () => {
     return (
-        <div className="w-full md:w-3/4 mx-auto bg-white px-6 py-5">
+        <div className="w-[96%] md:w-3/4 mx-auto bg-white px-6 py-5">
             <Link to={'/home'} className='flex justify-center mb-2 md:mb-4'>
                 <img src={nvbrandimg} alt="" />
             </Link>
