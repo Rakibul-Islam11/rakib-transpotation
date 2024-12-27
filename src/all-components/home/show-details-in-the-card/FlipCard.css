@@ -4,7 +4,11 @@
   height: 240px;
   perspective: 1200px; /* Increase perspective for more depth */
 }
-
+@media only screen and (max-width:768px) {
+  .card-container{
+    width: 100% ;
+  }
+}
 /* Card content */
 .card-content {
   width: 100%;
