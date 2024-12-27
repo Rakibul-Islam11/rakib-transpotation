@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Marquee from "react-fast-marquee";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -9,6 +10,14 @@ import grimgone from '../../assets/images/heroimgone.jpg'
 import hrimgtwo from '../../assets/images/hroimgtwo.jpg'
 import hrimgtree from '../../assets/images/heroimgfour.jpg'
 import hrimgffi from '../../assets/images/heroimgone.jpg'
+import dbgr from '../../assets/buss-brand-img/dbgr.png'
+import dem from '../../assets/buss-brand-img/demier.svg'
+import scina from '../../assets/buss-brand-img/scina.svg'
+import imgee from '../../assets/buss-brand-img/imgne.png'
+import isu from '../../assets/buss-brand-img/Isuzu.svg'
+import toyo from '../../assets/buss-brand-img/Toyota.svg'
+
+
 
 // Import required modules
 import { EffectFade, Navigation, Autoplay } from 'swiper/modules';
@@ -20,7 +29,7 @@ import AboutTranspotation from './sub/about-transpotation/AboutTranspotation';
 
 const Home = () => {
     return (
-        <div className="relative w-full md:w-3/4 h-[80vh] mx-auto">
+        <div className="relative w-full md:w-3/4 h-[80vh] mx-auto ">
             
             {/* Swiper Slider */}
             <Swiper
@@ -79,6 +88,23 @@ const Home = () => {
             </div>
             {/* rander abouttranspotaion componnet */}
             <AboutTranspotation></AboutTranspotation>
+            {/* brand marque start */}
+            <div className='bg-white pt-8'>
+                <div>
+                    <h1 className='text-slate-500 text-2xl text-center'>With Our Spuer Couches</h1>
+                    <Marquee>
+                        <div className='flex flex-row items-center gap-10'>
+                            <div className='w-28'><img src={dbgr} alt="" /></div>
+                            <div className='w-32'><img src={dem} alt="" /></div>
+                            <div className='w-24'><img src={scina} alt="" /></div>
+                            <div className='w-28'><img src={imgee} alt="" /></div>
+                            <div className='w-28'><img src={isu} alt="" /></div>
+                            <div className='w-40'><img src={toyo} alt="" /></div>
+                        </div>
+
+                    </Marquee>
+                </div>
+            </div>
         </div>
     );
 };
