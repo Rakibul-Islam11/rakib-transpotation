@@ -31,7 +31,7 @@ import FlipCard from './show-details-in-the-card/FlipCard';
 
 const Home = () => {
     return (
-        <div className="relative w-[96%] md:w-3/4 h-[80vh] mx-auto ">
+        <div className="relative w-[96%] md:w-3/4  mx-auto fr_horizental">
             
             {/* Swiper Slider */}
             <Swiper
@@ -83,7 +83,7 @@ const Home = () => {
 
             {/*rander SelectFrom Component */}
             <div
-                className="absolute top-1/2 transform translate-x-[8%] -translate-y-[25%] md:translate-x-[26%] z-10 w-full"
+                className="absolute top-[30%] transform translate-x-[8%] -translate-y-[25%] md:translate-x-[26%] z-10 w-full"
             >
                 
                 <SelectFrom />

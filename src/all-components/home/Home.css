@@ -4,7 +4,9 @@ body {
   position: relative;
   height: 100%;
 }
-
+.fr_horizental {
+  overflow-x: hidden;
+}
 
 .swiper {
   width: 100%;
